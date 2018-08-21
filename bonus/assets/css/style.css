@@ -237,3 +237,72 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+
+  /* I dont know if this right, 
+  but the pages are adjusting when I make them smaller on my desktop */
+
+@media only (max-width: 980px) {
+  .main-section {
+      width: 100%;
+  }
+
+  .auth-image {
+      height: 200px;
+      width: 300px;
+      float: left;
+      margin-right: 20px;
+  }
+}
+
+@media only (max-width: 768px) {
+  .main-section {
+      float: none;
+  }
+
+  .nav {
+      float: right
+  }
+
+  #contact {
+      margin-right: 30px
+  }
+
+@media only (max-width: 640px) {
+  #logo {
+      margin: auto;
+  }
+
+  .nav {
+      margin-bottom: 20px;
+      position: static;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      background-color: white;
+      height: 25px;
+
+  }
+  
+  .main-section {
+    width: auto;
+    float: none;
+    margin: 10px;
+    margin-top: 70px
+}
+
+  .masthead {
+      width: 100%
+  }
+
+  .header {
+      position: static;
+  }
+
+ 
+  .auth-image {
+      clear: both;
+      width: -webkit-fill-available;
+
+  }
+}
